@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="example.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+         <asp:ContentPlaceHolder ID="title" runat="server">
+    </asp:ContentPlaceHolder>
+    </title>
+    <link href="scripts/bootstrap.min.css" rel="stylesheet" />
+    <link href="dataTables/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="Fontawesome/all.css" rel="stylesheet" />
+    <link href="scripts/w3.css" rel="stylesheet" />
+    <link href="scripts/StyleSheet1.css" rel="stylesheet" />
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/popper.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="dataTables/jquery.dataTables.min.js"></script>
+    <script src="navigation%20bar.js"></script>
+      <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="Homepage.aspx">E-Tickets</a>
+            <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  
+                      <li class="nav-item active">
+                      <a class="nav-link" href="AboutUs.aspx">About</a>
+                    </li>
+                      <li class="nav-item active">
+                      <a class="nav-link" href="TermsCondition.aspx">Location</a>
+                    </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDd" role="button" data-toggle="dropdown">Tickets</a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDd">
+                              <a class="dropdown-item" href="BookTicket.aspx">Book Tickets</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="CancelTicket.aspx">Cancel Tickets</a>
+
+                          </div>
+                                               
+                    </li>
+               <li class="nav-item">
+                      <a class="nav-link" href="Admin/AdminHome.aspx">Admin</a>
+                    </li>
+          
+                </ul>
+            </div>
+</div>
+ 
+        <asp:ContentPlaceHolder ID="body" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <footer>
+         <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="#"> SRB</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+ 
+    </div>
+    </form>
+</body>
+</html>
